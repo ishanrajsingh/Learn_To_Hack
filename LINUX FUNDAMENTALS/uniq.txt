@@ -1,0 +1,18 @@
+The uniq command in Linux is used to detect, report, or remove adjacent duplicate lines from a text file or standard input.
+
+
+ -c, --count
+              prefix lines by the number of occurrences
+
+
+ -i, --ignore-case
+              ignore differences in case when comparing
+
+ -u, --unique
+              only print unique lines
+
+ -D     
+              print all duplicate lines
+ 
+ -w, --check-chars=N
+              compare no more than N characters in lines

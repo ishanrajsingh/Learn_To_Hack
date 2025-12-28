@@ -1,0 +1,79 @@
+rsync — Remote File Synchronization Command
+
+DESCRIPTION
+rsync is a fast and versatile command-line utility used for copying and synchronizing
+files and directories between two locations. These locations can be on the same system
+or across different systems over a network (using SSH).
+
+rsync is efficient because it transfers only the differences between source and destination
+files, making it faster than traditional copy commands.
+
+BASIC SYNTAX
+rsync [OPTIONS] SOURCE DESTINATION
+
+EXAMPLE
+rsync -av source_folder/ destination_folder/
+
+COMMONLY USED FLAGS
+
+-a, --archive
+Enables archive mode. This preserves symbolic links, permissions, ownership, timestamps,
+and recursively copies directories. It is the most commonly used flag.
+
+Example:
+rsync -a source/ destination/
+
+-v, --verbose
+Displays detailed information about the files being transferred.
+
+Example:
+rsync -av source/ destination/
+
+-z, --compress
+Compresses file data during the transfer. Useful when transferring data over a network
+to save bandwidth.
+
+Example:
+rsync -avz source/ user@remote:/backup/
+
+--progress
+Shows the progress of each file being transferred, including speed and remaining time.
+
+Example:
+rsync -av --progress source/ destination/
+
+--delete
+Deletes files in the destination directory that no longer exist in the source directory.
+⚠️ Use with caution.
+
+Example:
+rsync -av --delete source/ destination/
+
+-r, --recursive
+Copies directories recursively. This flag is included automatically when using -a.
+
+Example:
+rsync -r source/ destination/
+
+-e, --rsh=COMMAND
+Specifies the remote shell to use, commonly SSH.
+
+Example:
+rsync -av -e ssh source/ user@remote:/backup/
+
+--dry-run
+Performs a trial run without making any actual changes. Useful for testing commands safely.
+
+Example:
+rsync -av --dry-run source/ destination/
+
+-h, --human-readable
+Outputs numbers in a human-readable format (KB, MB, GB).
+
+Example:
+rsync -avh source/ destination/
+
+SUMMARY
+rsync is widely used for backups, mirroring directories, deploying files to servers,
+and synchronizing data efficiently. Its ability to transfer only changed data makes it
+extremely powerful for both local and remote file operations.

@@ -1,0 +1,15 @@
+Touch is used to create empty file from terminal or to update timestamp of existing file.
+
+If for example you typed-
+"
+touch example.txt
+"
+then if example.txt does not exist in your current directory, then touch will create example.txt empty file in current working directory.
+If it exist then it will change its atime and mtime to current time.
+
+Flags:
+1. -a : to change only access time.
+2. -m : to change only modification time.
+3. -c : it does not create new file, if file does not exist then nothing will happen. If it exist then timestamp is updated.
+4. -d <string> : Allow natural language time string.
+5. -t : set time in numeric format.
