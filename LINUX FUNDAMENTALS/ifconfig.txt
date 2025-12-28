@@ -1,0 +1,11 @@
+Command Name: Ifconfig
+
+Description: Ifconfig  is  used to configure the kernel-resident network interfaces. It is used at boot time to set up interfaces as necessary.  After that, it is usually only needed when debugging or when system tuning is needed.
+
+Some Important Flags:
+       -a     display all interfaces which are currently available, even if down
+       -s     display a short list (like netstat -i)
+       -v     be more verbose for some error conditions
+    interface The  name  of the interface.
+       up     This flag causes the interface to be activated.
+      down    This flag causes the driver for this interface to be shut down.

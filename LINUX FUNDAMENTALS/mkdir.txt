@@ -1,0 +1,25 @@
+mkdir command is used to create new directories(folders) in the linux file system.
+It helps to organize files. we can use this to create single or multiple directories at once.
+Syntax : mkdir [options] directory_name
+example : mkdir dir1 dir2 dir3
+Some Common flags
+
+1. -p (create parent directories)
+this option creates all the missing parent directories automatically.
+example : mkdir -p dir1/asset/object
+
+2. -v (verbose mode)
+this makes mkdir show a message for every directory it creates.
+example : mkdir -v test_folder
+
+3. -m (Set Permissions)
+this lets you set directory permissions at time of creation instead of changing them using chmod
+example : mkdir -m 755 secure_folder
+
+4. --parents
+this is long form of -p. it behaves the same way but is more readable
+example : mkdir --parents dir2/asset/object
+
+5. --help (Display help information)
+this flag displays a help message showing available options and syntax for mkdir.
+example : mkdir --help

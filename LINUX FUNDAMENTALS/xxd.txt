@@ -1,0 +1,28 @@
+xxd creates a hex dump of a given file or standard input.  It can also convert a hex dump back to its original binary form.
+
+Flags: 
+
+1. -b: Switch to bits(binary digits) dump, rather than hex dump. It writes the octets(0-9,A-F) as eight digits of "0" and "1".
+Ex: echo -n "Hello World" | xxd -b
+Output: 00000000: 01101000 01100101 01101100 01101100 01101111           hello
+
+2. -i: Outputs in C include file style. A complete static array is created with the name of the input file. Super useful for directly embedding binary data in C/C++ programs.
+Ex: echo -n "Hello World" | xxd -i
+Output:   0x68, 0x65, 0x6c, 0x6c, 0x6f
+
+3. -p: Output in PostScript continuous hex dump style. Also known as plain hex dump style.
+Ex: echo -n "hello" | xxd -p
+Output: 68656c6c6f
+
+4. -r: reverses a hexdump back to its original binary form or whatever format it was in originally.
+Ex: echo -n "68656c6c6f" | xxd -p -r
+Output: hello
+
+5. -u: Use upper case hex letters in the output. Default is lower case.
+Ex: echo -n "hello" | xxd -u
+Output: 68656C6C6F
+
+
+
+
+
