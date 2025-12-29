@@ -1,0 +1,27 @@
+Part 1: Directory & File Manipulation ->
+#1 mkdir newDirectory
+	This command create a new directory in current folder named as newDirectory
+#2 cd newDirectory
+	This command let us change our current working directory to newDirectory.
+#3 touch harshit.txt
+	This command create a text file named harshit.
+#4 mv harshit.txt IIT2025003.txt
+	This command change name of harshit.txt to IIT2025003.txt
+#5 cd ..
+	This command let us step out of current working directory to its parent folder
+#6 rm -rf newDirectory
+	This command delete all content of newDirectory including itself.
+Drive: https://drive.google.com/file/d/13Uj6BtItbT0TGDWZDIZSmNbB9b2Evgql/view?usp=sharing
+
+Part 2: User Management
+#1 sudo adduser newuser
+	This command forces computer to add new user named newuser.
+#2 groups newuser
+	This command displays the group in which newuser belong to.
+#3 sudo usermod -aG sudo username
+	This command forces computer to append newuser in the list of sudo users.
+#4 groups newuser
+	...
+#5 sudo passwd newuser
+	This command let us set password for newuser
+Drive: https://drive.google.com/file/d/18mx6H4KzioAXs0b8rrsy5TCcPQoQyTNH/view?usp=sharing
