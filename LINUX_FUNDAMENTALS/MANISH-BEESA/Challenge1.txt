@@ -1,0 +1,8 @@
+Flag :  
+    geek{grep_is_good_to_find_things_cEDf1591}
+
+Command Used :
+    grep -o "geek{[^}]*}" challenge1.txt
+
+proof : 
+    https://drive.google.com/file/d/1tX49Bu5td7AJj2moqhi4LBeXjAQSDPk-/view?usp=sharing
