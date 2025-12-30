@@ -1,0 +1,20 @@
+Flag:
+geek{grep_is_good_to_find_things_cEDf1591}
+
+COMMAND1:
+curl -o yo.txt https://raw.githubusercontent.com/opencodeiiita/Learn_To_Hack/refs/heads/main/LINUX_FUNDAMENTALS/Challenge1/file
+
+
+Used to download the file present at the url: https://raw.githubusercontent.com/opencodeiiita/Learn_To_Hack/refs/heads/main/LINUX_FUNDAMENTALS/Challenge1/file
+
+-o <file name>: saves the file using the file name mentioned, if not mentioned, saves using the original name.
+
+
+grep "geek{[^}]*}" yo.txt:
+grep <regex> <file name>
+
+used to find any regex from any given data. 
+
+
+Link to the image:
+https://drive.google.com/file/d/1_EC0N6Ejg_C-C9juccuQOi2UbLrOrWRO/view?usp=sharing
