@@ -1,0 +1,33 @@
+Command: hexdump
+
+Description:
+The hexdump command displays file contents in hexadecimal, decimal, or ASCII formats.
+It is commonly used in binary analysis and digital forensics.
+
+Usage:
+hexdump [OPTIONS] FILE
+
+Common Flags:
+
+- -C
+  Displays canonical hex + ASCII output (most useful).
+
+- -n <length>
+  Limits the output to the specified number of bytes.
+
+- -s <offset>
+  Skips bytes from the beginning of the file.
+
+- -v
+  Displays all input data (no repetition suppression).
+
+- -e <format>
+  Specifies a custom output format.
+
+CTF Use Cases:
+- Inspect binary files
+- Extract hidden data
+- Analyze malware or unknown executables
+
+Example:
+hexdump -C binaryfile
