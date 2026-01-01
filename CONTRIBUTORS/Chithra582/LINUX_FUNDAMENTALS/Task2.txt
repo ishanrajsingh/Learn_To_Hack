@@ -1,0 +1,33 @@
+mkdir
+# Creates a new directory
+
+cd
+# Changes the current working directory
+
+touch
+# Creates an empty file
+
+mv
+# Renames or moves a file or directory
+
+cd ..
+# Moves out to the parent directory
+
+rm -r
+# Deletes a directory and its contents recursively
+
+useradd
+# Creates a new user account on the system
+
+groups
+# Displays the groups a user belongs to
+
+usermod -aG sudo
+# Adds a user to the sudo group to grant administrative privileges
+
+usermod -aG wheel
+# Adds a user to the wheel group on Arch/Fedora systems
+
+passwd
+# Sets or changes a user's password
+
