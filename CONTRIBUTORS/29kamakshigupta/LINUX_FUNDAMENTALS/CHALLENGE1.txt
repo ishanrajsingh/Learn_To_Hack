@@ -5,6 +5,7 @@ The Command:
 grep -o "geek{[^}]*}" file.1
 
 Explanation: 
+
 I used the wget command to download the data file. 
 The grep command searches for patterns within files. 
 I used the -o (only-matching) flag to isolate the flag 
