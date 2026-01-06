@@ -1,0 +1,11 @@
+command run : 
+exiftool CICADA_IS_COMING.png
+about the cmmand :
+
+it helps us to see the metadata that is hidden inside the files
+
+
+Flag:
+geek{EveryOne_Loves_Maggi}
+
+drive link - https://drive.google.com/file/d/1BYmATivieJh_7X_K2rbnme6vLNgMzXWR/view?usp=sharing
